@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="back">
+            <div class="row mx-auto">
+                <div class="col-sm-12">
+                    <h3>הוצאות /הכנסות</h3>
+                    <div class="col-sm-4 mx-auto" id="balance"></div>
+                    <p id="date"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 mx-auto">
+                    <div class="mx-auto" style="width: 80px;">
+                        <select id="plus_minus_select" class="custom-select custom-select-lg mb-3"
+                            onchange="changeColor(this)">
+                            <option id="plus" value="+">+</option>
+                            <option id="minus" value="-">-</option>
+                        </select>
+                    </div>
+                    <div id="inputs" class="mx-auto">
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Description</span>
+                            </div>
+                            <input id='input_description' type="text" class="form-control"
+                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Amount</span>
+                            </div>
+                            <input id="input_amount" type="number" class="form-control"
+                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                    </div>
+                    <button id="create_income" class="btn btn-success" onclick="createIncome()">Insert</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mx-md-n5">
+            <div class="col px-md-5">
+                <div class="p-3 center" id="incomes"></div>
+            </div>
+            <div class="col px-md-5">
+                <div class="p-3 center" id="outcomes"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

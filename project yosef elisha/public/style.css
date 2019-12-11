@@ -1,0 +1,61 @@
+.p-3{
+    text-align: center;
+}
+.mx-auto{
+    text-align: center;
+}
+#back{
+    background-image: url("https://thegraphicdesignshop.co.uk/wp-content/uploads/2016/04/Blog-images_Colour-1080x350.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    height: 350px;
+    background-repeat: no-repeat
+    ;
+}
+.center {
+    margin: auto;
+    width: 69%;
+}
+
+#inputs{
+      width: 300px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #balance{
+      display: block;
+     margin-left: 40%;
+     
+  }
+
+  #id_balance{
+      color: rgb(224, 34, 151);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px;
+  }
+
+  #incomes{
+      color: green;
+  }
+
+  #outcomes{
+      color: red
+  }
+
+  #plus_minus_select{
+      color: green;
+  }
